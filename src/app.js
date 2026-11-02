@@ -20,7 +20,7 @@ connection.connect((err) => {
 app.use(express.static(path.join(__dirname, '../public')));
 // Root route - shows plain text banner with header
 app.get('/', (req, res) => {
-    res.send('<h1>Students Portal</h1><p>This is Sadhix Institute</p>');
+    res.send('<h1>Students Portal</h1><p>This is Sadhix and Institute</p>');
 });
 // API Endpoint to Fetch User Details
 app.get("/user/:id", (req, res) => {
